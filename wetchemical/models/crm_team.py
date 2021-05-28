@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
-import time
-import babel
-from odoo.tools import float_round, date_utils
-from odoo.tools.misc import format_date
-from odoo import models, fields, api, tools, SUPERUSER_ID
+
+from odoo import models, fields, api, SUPERUSER_ID
 from odoo.tools.safe_eval import safe_eval
-from datetime import datetime
 
 
 
