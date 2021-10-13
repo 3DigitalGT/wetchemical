@@ -12,7 +12,7 @@
     'maintainer': 'Proyectos Agiles, S.A.',
     'website': "https://www.inteligos.gt",
     'depends': [
-        'base', 'crm', 'stock',
+        'base', 'crm', 'stock', 'sale'
     ],
     'data': [
         'views/crm_lead_view.xml',
