@@ -21,7 +21,7 @@ class CustomerPortal(CustomerPortal):
             return request.redirect('/my')
 
         if report_type in ('html', 'pdf', 'text'):
-            return self._show_report(model=order_sudo, report_type=report_type, report_ref='sale.report_saleorder_wet', download=download)
+            return self._show_report(model=order_sudo, report_type=report_type, report_ref='sale.report_sale_order_wet', download=download)
 
         # use sudo to allow accessing/viewing orders for public user
         # only if he knows the private token
@@ -105,7 +105,7 @@ class CustomerPortal(CustomerPortal):
             order_sudo.action_confirm()
             order_sudo._send_order_confirmation_mail()
 
-        pdf = request.env.ref('sale.report_saleorder_wet').sudo().render_qweb_pdf([order_sudo.id])[0]
+        pdf = request.env.ref('sale.report_sale_order_wet').sudo().render_qweb_pdf([order_sudo.id])[0]
 
         _message_post_helper(
             'sale.order', order_sudo.id, _('Order signed by %s') % (name,),
