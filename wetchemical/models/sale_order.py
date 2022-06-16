@@ -9,8 +9,8 @@ class SaleOrder(models.Model):
     credit_debit = fields.Selection(
         [
             ("Credito", "Credito"),
-            ("Debito    ", "Debito")
+            ("Debito ", "Debito")
         ],
         string="Condicion",
-        default='credit'
+        default='Credito'
     )
