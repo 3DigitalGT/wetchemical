@@ -3,6 +3,7 @@
 from odoo import models, fields, api, SUPERUSER_ID
 from odoo.tools.safe_eval import safe_eval
 
+
 class ProductProduct(models.Model):
     _inherit = 'product.product'
 
