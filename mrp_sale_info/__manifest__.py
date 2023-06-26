@@ -12,9 +12,9 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["mrp", "sale_stock", "sale_management"],
+    "depends": ["mrp", "sale", "sale_stock", "stock", "sale_management"],
     "data": [
-            # "views/mrp_production.xml",
+            "views/mrp_production.xml",
              "views/mrp_workorder.xml"
              ],
 }
