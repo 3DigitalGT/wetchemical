@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Wetchemical',
-    'version': '13.0.1.1.0',
+    'version': '13.0.1.1',
     'summary': 'Personalizacion para WetChemical',
     'description': """
         Cambios especificos para WetChemical.
